@@ -1,0 +1,10 @@
+name: CI-CD
+
+trigger:
+  - main
+
+steps:
+  - script: echo "Hello CI/CD" > artifact.txt
+
+  - publish: artifact.txt
+    artifact: MyArtifact
